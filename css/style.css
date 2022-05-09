@@ -1,0 +1,99 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+}
+h1{
+    margin: 30px 0 10px 10px;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+}
+#moon {
+    position: absolute;
+    top:20px;
+    right:60px;
+    width:150px;
+}
+#arbre {
+    position: absolute;
+    bottom:0;
+    right:25px;
+    width:200px;
+}
+
+#firingButton {
+    
+    position: absolute;
+    left:40px;
+    top: 250px;
+    width:75px;
+    height:75px;
+}
+#arret {
+    
+    position: absolute;
+    left:120px;
+    top: 250px;
+    width:75px;
+    height:75px;
+}
+#zero {
+    
+    position: absolute;
+    left:200px;
+    top: 250px;
+    width:80px;
+    height:75px;
+}
+
+#firingButton img,
+#arret img,
+#zero img
+ {
+    width: 100%;
+}
+
+#billboard {
+    position: absolute;
+    left:50px;
+    top:100px;
+    width: 214px;
+    height: 130px;
+    background-image: url('../images/billboard.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+#billboard span {
+    display: inline-block;
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    right: 9px;
+    top: 5px; 
+    font-size: 3rem;
+    line-height: 120px;
+    color: white;  
+}
+
+#rocket {
+    position: absolute;
+    bottom:0;
+    width:200px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 15s ease;
+}
+
+#rocket.tookOff {
+    bottom: 2000px;
+}
+#rocket.tookOfff {
+    bottom:0px;
+}
+.hidden:hover{
+    opacity: 0.7;
+}
